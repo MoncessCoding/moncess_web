@@ -1,0 +1,174 @@
+.learnPageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00d070;
+    height: calc(100vh - 115px);
+    padding: 0 162px;
+    gap: 100px;
+
+    h1 {
+        color: white;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 96px;
+    }
+    div{
+        padding: 0;
+    }
+
+    .unitsContainer{
+        margin: 0;
+        padding: 0;
+        .courseContainer{
+            display: flex;
+            justify-content: center;
+            .course{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                border: none;
+                --bs-card-bg: #00d070;
+                color: white;
+                gap: 26px;
+                padding-right: 100px;
+                .headerContainer{
+                    text-align: left;
+                    h5{
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 54px;
+                        margin-bottom: 0;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .buttonContainer{
+                    display: flex;
+                    justify-content: start;
+                    align-items: end;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                    a{
+                        background-color: #00d070;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: white;
+                        border: 1px solid white;
+                        border-radius: 0%;
+                        width: 190px;
+                        height: 56px;
+                    }
+
+                    
+                }
+                
+
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1919px) {
+    .learnPageContainer{
+        h1{
+            font-size: 75px;
+        }
+        .unitsContainer{
+            margin: 0;
+            padding: 0;
+            .courseContainer{
+                .course{
+                    padding-right: 60px;
+                    .headerContainer{
+                        text-align: left;
+                        h5{
+                            font-size: 30px;
+                            line-height: 44px;
+                        }
+                    }
+    
+                    .buttonContainer{
+                        display: flex;
+                        align-items: left;
+                        text-align: center;
+                        a{
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 28px;
+                            width: 160px;
+                            height: 46px;
+                        }
+    
+                        
+                    }
+                    
+    
+    
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 820px) {
+    .learnPageContainer{
+        text-align: center;
+        height: 100%;
+        padding: 0;
+        gap: 0;
+        margin: 0;
+        h1 {
+            padding: 60px 0;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        div{
+            padding: 0;
+        }
+    
+        .unitsContainer{
+            margin: 0;
+            padding: 0 30px;
+            .courseContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 60px;
+                .course{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    padding-right: 0;
+                    .headerContainer{
+                        text-align: center;
+                        h5{
+                            font-size: 24px;
+                            line-height: 36px;
+                        }
+                    }
+    
+                    .buttonContainer{
+                        a{
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: white;
+                            width: 190px;
+                            height: 44px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
